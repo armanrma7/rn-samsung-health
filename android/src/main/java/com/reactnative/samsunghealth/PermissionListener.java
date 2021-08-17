@@ -27,7 +27,7 @@ public class PermissionListener implements HealthResultHolder.ResultListener<Per
 
         if (resultMap.containsValue(Boolean.FALSE)) {
             Log.e(REACT_MODULE, "NOT CONNECTED YET");
-            mPromise.reject("Permisson canceled");
+            mPromise.reject("Permisson canceled","Permisson canceled");
         } else {
             Log.d(REACT_MODULE, "COUNT THE STEPS!");
             mPromise.resolve(true);
